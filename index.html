@@ -11,70 +11,11 @@
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
 
 
-<!-- TOOLTIP SCRIPT (REMOVE ONYL IF YOU WANT STANDARD BROWSER TOOLTIPS) -->
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
-    <script>
-    (function($){
-    $(document).ready(function(){
-    $("a[title]").style_my_tooltips({
-    tip_follows_cursor:true,
-    tip_delay_time:90,
-    tip_fade_speed:600,
-    attribute:"title"
-    });
-    });
-    })(jQuery);
-    </script>
-
 
 <style type="text/css">
 
 /* ---------------------------- GENERAL ----------------------------- */
 
-/* -------- SELECTION TOOL ------- */
-
-::-moz-selection {
-    background: {color:text};
-    color: #FFF;
-}
-
-::selection {
-    background: {color:text};
-    color:#FFF;
-}
-
-/* -------- SCROLLBAR ------- */
-
-::-webkit-scrollbar {
-    width: 9px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background:#FFF;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background:{color:text};
-}
-::-webkit-scrollbar-thumb:window-inactive {
-	background: transparent;
-}
-
-/* ------- TOOLTIPS ------ */
-
-#s-m-t-tooltip {
-    max-width:300px;
-    margin:10px 0px 0px 10px;
-    background-color:#FFF;
-    font-family:helvetica;
-    font-size:16px;
-    color:#3a54a4;
-    z-index:999999999999999999999999999999999999;
-    }
 
 /* -------- BASICS ------- */
 
@@ -173,7 +114,6 @@ ol{
         background:transparent;
         color:#3a54a4;
         border-bottom:1px solid #3a54a4;
-        background:{color:links};
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         -o-transition: all .3s;
