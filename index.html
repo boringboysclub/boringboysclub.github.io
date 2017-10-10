@@ -2,43 +2,13 @@
 <html>
 <head>
 
-<!--
 
-All-In-One Theme Base Code by Paige @neonbikethemes.tumblr.com
 
-RULES OF THE BASE CODE:
-
-    - Don't steal and repost as your own
-    - Leave a little line in the code somewhere that says the base code is by neonbike themes. You can delete the rules.
-    - please like/reblog the post
-    - if you have questions don't hesitate to ask!
-
-Thanks!
-
--->
-
-{block:Description}
-<meta name="description" content="{MetaDescription}" />
-{/block:Description}
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-<title>{Title}{block:TagPage} - {Tag} {/block:TagPage} {block:SearchPage} - {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}- {PostSummary} {/block:PostSummary}</title>
+<title>BORING! BOYS! CLUB!</title>
 <link rel="shortcut icon" href="{Favicon}">
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
-
-<meta name="color:Background" content="#ffffff" />
-<meta name="color:links" content="#000000" />
-<meta name="color:links hover" content="#a0a0a0" />
-<meta name="color:text" content="#000000" />
-<meta name="color:posts" content="#ffffff" />
-
-<meta name="text:Tab 1 Title" content="Tab 1 Title" />
-<meta name="text:Tab 2 Title" content="Tab 2 Title" />
-<meta name="text:Tab 3 Title" content="Tab 3 Title" />
-<meta name="text:Tab 4 Title" content="Tab 4 Title" />
-<meta name="text:Tab 5 Title" content="Tab 5 Title" />
-
-<meta name="if:hide captions" content="0"/>
 
 
 
@@ -76,12 +46,12 @@ Thanks!
 
 ::-moz-selection {
     background: {color:text};
-    color: {color:background};
+    color: #FFF;
 }
 
 ::selection {
     background: {color:text};
-    color: {color:background};
+    color:#FFF;
 }
 
 /* -------- SCROLLBAR ------- */
@@ -92,7 +62,7 @@ Thanks!
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background:{color:background};
+    background:#FFF;
 }
 
 /* Handle */
@@ -108,18 +78,18 @@ Thanks!
 #s-m-t-tooltip {
     max-width:300px;
     margin:10px 0px 0px 10px;
-    background-color:{color:bakground};
+    background-color:#FFF;
     font-family:helvetica;
     font-size:16px;
-    color:{color:text};
+    color:#3a54a4;
     z-index:999999999999999999999999999999999999;
     }
 
 /* -------- BASICS ------- */
 
 body {
-    background:{color:Background};
-    color: {color:text};
+    background:#FFF;
+    color: #3a54a4;
     font-family: helvetica, arial;
     font-size: 16px;
     margin: 0;
@@ -149,7 +119,7 @@ a:hover{
 }
 
 blockquote {
-    border-left: 1px solid {color:text};
+    border-left: 1px solid #3a54a4;
     margin: 10px;
     padding-left:25px;
     padding-top:3px;
@@ -278,8 +248,8 @@ ol{
 
     li.active a, li.active a:hover {
         background:transparent;
-        color:{color:background};
-        border-bottom:1px solid {color:text};
+        color:#3a54a4;
+        border-bottom:1px solid #3a54a4;
         background:{color:links};
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
@@ -304,132 +274,14 @@ ol{
 
 article {
     float:left;
-    background:{color:posts};
     padding: 10px;
     width: 500px;
     text-align:left;
     margin-bottom:80px;
 }
 
-/* ---------------------------- POST INFO -----------------------------*/
-
-.postinfo{
-    margin-top:10px;
-    font-weight:bold;
-}
-
-.tags {
-    margin-top:5px;
-    font-weight:normal;
-}
-
-/* ---------------------------- POST NOTES  ------------------------- */
-
-ol.notes {
-    display:block;
-    text-align:left;
-    list-style-type:none;
-    margin-left:-40px;
-}
-
-ol.notes li.note{
-    margin-bottom:5px;
-}
-
-.pagenotes {
-    text-align:left;
-    margin-top:15px;
-}
-
-.pagenotes img{
-    padding-right:5px;
-    padding-top:5px;
-    margin-bottom:-5px;
-}
 
 
-/* -------------------------- POST TYPES -------------------------- */
-
-/* CHAT */
-
-ul.chat{
-    list-style:none;
-    margin-left:-40px;
-}
-
-.chat span {
-    float: left;
-}
-
-/* QUOTES */
-
-.quote{
-    font-size:16px;
-    line-height:150%;
-}
-
-.quotesource{
-    text-align:left;
-    margin-bottom:10px;
-}
-
-/* QUESTIONS */
-
-.question{
-    margin-bottom:15px;
-}
-
-.answer {
-    font-size:16px;
-}
-
-.askerimg{
-    position:relative;
-    display:inline-block;
-    margin-right:10px;
-}
-
-/* AUDIO */
-
-.songart{
-    float:left;
-    margin-right:10px;
-}
-
-.songart img{
-    width:80px;
-    height:80px;
-}
-
-.songtitle{
-    margin-bottom:10px;
-    margin-left:90px;
-}
-
-.songauthor{
-    margin-bottom:10px;
-    font-size:16px;
-    margin-left:90px;
-}
-
-.tumblr_audio_player {
-    height: 50px;
-}
-
-/* ------------------------- PAGINATION ------------------------- */
-
-#pagination{
-    position:static;
-    margin-top:30px;
-    text-align:center;
-}
-
-.pagibutton{
-    position:relative;
-    display:inline-block;
-    background:{color:posts};
-    padding:15px;
-}
 
 
 /* --------------------------- Custom CSS -------------------------- */
@@ -447,7 +299,7 @@ ul.chat{
 <div id="topbar">
 
     <div class="blogtitle"><img src="https://68.media.tumblr.com/0799de42b4f774bbdfae8617f451bf6c/tumblr_ov2144Gg2S1w7ytluo1_1280.png"><br><br>
-        <a href="/">{Title}</a>
+        <a href="/">BORING! BOYS! CLUB!</a>
     </div>
 
     <div id="navbar">
@@ -479,176 +331,6 @@ ul.chat{
 
 <div id="postcontainer">
 
-{block:Posts}
-<article>
-
-<!--TEXT POST-->
-{block:Text}
-    {block:Title}
-    <h1 class="title">
-    <a href="{Permalink}">{Title}</a></h1>
-    {/block:Title}
-    {Body}
-{/block:Text}
-
-
-<!--PHOTO POST-->
-{block:Photo}
-    {block:IndexPage}
-    {LinkOpenTag}
-    <img src="{PhotoURL-500}" alt="{PhotoAlt}" />
-    {LinkCloseTag}
-    {/block:IndexPage}
-    {block:PermalinkPage}
-    {LinkOpenTag}
-    <img src="{PhotoURL-500}" alt="{PhotoAlt}" />
-    {LinkCloseTag}{/block:PermalinkPage}
-{/block:Photo}
-
-
-<!--PHOTOSET POST-->
-{block:Photoset}
-    {block:IndexPage}{Photoset-500}{/block:IndexPage}
-    {block:PermalinkPage}{Photoset-500}{/block:PermalinkPage}
-{/block:Photoset}
-
-
-<!--QUOTE POST-->
-{block:Quote}
-    <div class="quote">{Quote}</div>
-    {block:Source}
-    <div class="quotesource"><b>/</b> {Source}</div>
-    {/block:Source}
-{/block:Quote}
-
-
-<!--LINK POST-->
-{block:Link}
-    <h1 class="title"><a href="{URL}">{Name}</a></h1>
-    {block:Description}{Description}{/block:Description}
-{/block:Link}
-
-
-<!--CHAT POST-->
-{block:Chat}
-    <ul class="chat">
-        {block:Lines}<li class="{Alt}">{block:Label}<span class="label">{Label}&nbsp;</span>{/block:Label}<p> {Line} </p></li>{/block:Lines}
-    </ul>
-{/block:Chat}
-
-
-<!--AUDIO POST-->
-{block:Audio}
-    {block:AlbumArt}
-    <div class="songart">
-        <img src="{AlbumArtURL}">
-    </div>
-    {/block:AlbumArt}
-    <div class="songtitle">
-        {block:TrackName}
-        {TrackName}
-        {/block:TrackName}
-    </div>
-    <div class="songauthor">
-        By
-        {block:Artist}
-        {Artist}
-        {/block:Artist}
-    </div>
-    {AudioPlayerWhite}
-{/block:Audio}
-
-
-<!--VIDEO POST-->
-{block:Video}
-<div class="video">
-    <div class="video-player">{Video-500}</div>
-{/block:Video}
-
-
-<!--ANSWER POST-->
-{block:Answer}
-<div class="askerimg"><img src="{AskerPortraitURL-16}"></div>
-    <b>{Asker}:</b></span>
-<span class="question">{Question}</span>
-<p><div class="answer">{Answer}</div>
-{/block:Answer}
-
-<!--CAPTIONS-->
-{block:Ifhidecaptions}
-    {block:permalink}
-        {block:Caption}
-            {Caption}
-        {/block:Caption}
-    {/block:permalink}
-{/block:Ifhidecaptions}
-{block:Ifnothidecaptions}
-    {block:Caption}
-        {Caption}
-    {/block:Caption}
-{/block:Ifnothidecaptions}
-
-<!--POST INFORMATION-->
-<div class="postinfo">
-
-    <!--PERMALINK-->
-    <a href="{Permalink}">
-        {block:Date}
-        {ShortMonth} {DayOfMonth}{DayOfMonthSuffix} {12Hour}:{Minutes} {AmPm}
-        {/block:Date}
-    </a>
-
-    <!--NOTES-->
-    {block:NoteCount}
-        <a href="{Permalink}"> + {NoteCount} </a>
-    {/block:NoteCount}
-
-    <!--VIA AND SOURCE-->
-    {block:RebloggedFrom}
-        ( <a href="{ReblogParentURL}">Via</a>
-    {/block:RebloggedFrom}
-    {block:ContentSource}
-        & <a href="{SourceURL}">Source</a>
-    {/block:ContentSource}
-    {block:RebloggedFrom} ){/block:RebloggedFrom}
-
-    <!--TAGS-->
-    {block:HasTags}
-        <div class="tags">
-            {block:Tags}
-            <a href="{TagURL}">#{Tag},</a>
-            {/block:Tags}
-        </div>
-    {/block:HasTags}
-
-</div>
-
-<!--POST NOTES-->
-{block:PostNotes}
-    <div class="pagenotes">{PostNotes-16}</div>
-{/block:PostNotes}
-
-
-</article>
-{/block:Posts}
-<!--Close of article-->
-
-
-<!--PAGINATION-->
-{block:Pagination}
-    <div class="pagination">
-        {block:PreviousPage}
-        <a href="{PreviousPage}">
-            <div class="pagibutton">Previous</div></a>
-        {/block:PreviousPage}
-        {block:NextPage}
-        <a href="{NextPage}">
-            <div class="pagibutton">Next</div></a>
-        {/block:NextPage}
-    </div>
-{/block:Pagination}
-
-</div>
 
 </div>
 
