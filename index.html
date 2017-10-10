@@ -1,1 +1,753 @@
-hi
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+
+All-In-One Theme Base Code by Paige @neonbikethemes.tumblr.com
+
+RULES OF THE BASE CODE:
+
+    - Don't steal and repost as your own
+    - Leave a little line in the code somewhere that says the base code is by neonbike themes. You can delete the rules.
+    - please like/reblog the post
+    - if you have questions don't hesitate to ask!
+
+Thanks!
+
+-->
+
+{block:Description}
+<meta name="description" content="{MetaDescription}" />
+{/block:Description}
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+<title>{Title}{block:TagPage} - {Tag} {/block:TagPage} {block:SearchPage} - {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}- {PostSummary} {/block:PostSummary}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+<meta name="color:Background" content="#ffffff" />
+<meta name="color:links" content="#000000" />
+<meta name="color:links hover" content="#a0a0a0" />
+<meta name="color:text" content="#000000" />
+<meta name="color:posts" content="#ffffff" />
+
+<meta name="text:Tab 1 Title" content="Tab 1 Title" />
+<meta name="text:Tab 2 Title" content="Tab 2 Title" />
+<meta name="text:Tab 3 Title" content="Tab 3 Title" />
+<meta name="text:Tab 4 Title" content="Tab 4 Title" />
+<meta name="text:Tab 5 Title" content="Tab 5 Title" />
+
+<meta name="if:hide captions" content="0"/>
+
+
+
+<!-- IMPORTED SCRIPTS - DON'T REMOVE -->
+
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+<script src="http://static.tumblr.com/wgijwsy/Ebfm2v4gy/jquery.masonry.min.js"></script>
+
+<!-- TOOLTIP SCRIPT (REMOVE ONYL IF YOU WANT STANDARD BROWSER TOOLTIPS) -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+    <script>
+    (function($){
+    $(document).ready(function(){
+    $("a[title]").style_my_tooltips({
+    tip_follows_cursor:true,
+    tip_delay_time:90,
+    tip_fade_speed:600,
+    attribute:"title"
+    });
+    });
+    })(jQuery);
+    </script>
+
+
+<style type="text/css">
+
+/* ---------------------------- GENERAL ----------------------------- */
+
+/* -------- SELECTION TOOL ------- */
+
+::-moz-selection {
+    background: {color:text};
+    color: {color:background};
+}
+
+::selection {
+    background: {color:text};
+    color: {color:background};
+}
+
+/* -------- SCROLLBAR ------- */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background:{color:background};
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:{color:text};
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: transparent;
+}
+
+/* ------- TOOLTIPS ------ */
+
+#s-m-t-tooltip {
+    max-width:300px;
+    margin:10px 0px 0px 10px;
+    background-color:{color:bakground};
+    font-family:helvetica;
+    font-size:16px;
+    color:{color:text};
+    z-index:999999999999999999999999999999999999;
+    }
+
+/* -------- BASICS ------- */
+
+body {
+    background:{color:Background};
+    color: {color:text};
+    font-family: helvetica, arial;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    line-height:150%;
+    text-transform:lowercase;
+}
+
+a {
+    color: {color:links};
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+a:hover{
+    color:{color:links hover};
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+blockquote {
+    border-left: 1px solid {color:text};
+    margin: 10px;
+    padding-left:25px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+iframe, img, embed, object, video {
+    max-width: 100%;
+}
+
+p{
+    margin-bottom:10px;
+}
+
+img {
+    height: auto;
+    width:auto;
+    max-width:100%;
+}
+
+h1{
+    text-transform:uppercase;
+    font-size:16px;
+}
+
+ul{
+    list-style-type:square;
+}
+
+ol{
+    list-style-type:;
+}
+
+#bigcon{
+    width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.tabcontent {
+    position:static;
+    margin-left:auto;
+    margin-right:auto;
+    width: 500px;
+    text-align:center;
+    margin-bottom:100px;
+}
+
+#postcontainer {
+    position:static;
+    margin-left:auto;
+    margin-right:auto;
+    width: 500px;
+    overflow:visible;
+     word-wrap: break-word;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+
+/* ----------------------------- HEADER STUFF ---------------------------*/
+
+#topbar{
+    position:static;
+    margin-top:35px;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+.blogtitle{
+    margin-top:30px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    font-size:50px;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+
+
+
+#navbar{
+    display:inline-block;
+    text-align:center;
+}
+
+/* ------------------------------ TABS ------------------------------ */
+
+.tabs {
+    width:100%;
+    margin-left:0px;
+    display:inline-block;
+
+}
+
+    /*----- Tab Links -----*/
+
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+
+    }
+
+    .tab-links li {
+        margin-right:5px;
+        display:inline-block;
+        list-style:none;
+        text-transform:uppercase;
+    }
+
+        .tab-links a {
+            padding:7px;
+            display:inline-block;
+            color:{color:links};
+            transition:all linear 0.15s;
+            font-size:16px;
+
+        }
+
+        .tab-links a:hover {
+            text-decoration:none;
+
+         border: 3px solid #3a54a4;
+        }
+
+    li.active a, li.active a:hover {
+        background:transparent;
+        color:{color:background};
+        border-bottom:1px solid {color:text};
+        background:{color:links};
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        -ms-transition: all .3s;
+        transition: all .3s;
+    }
+
+    /*----- Content of Tabs -----*/
+    .tab-content {
+    }
+
+        .tab {
+            display:none;
+        }
+
+        .tab.active {
+            display:block;
+        }
+
+/* --------------------------- POSTS (articles)  --------------------- */
+
+article {
+    float:left;
+    background:{color:posts};
+    padding: 10px;
+    width: 500px;
+    text-align:left;
+    margin-bottom:80px;
+}
+
+/* ---------------------------- POST INFO -----------------------------*/
+
+.postinfo{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.tags {
+    margin-top:5px;
+    font-weight:normal;
+}
+
+/* ---------------------------- POST NOTES  ------------------------- */
+
+ol.notes {
+    display:block;
+    text-align:left;
+    list-style-type:none;
+    margin-left:-40px;
+}
+
+ol.notes li.note{
+    margin-bottom:5px;
+}
+
+.pagenotes {
+    text-align:left;
+    margin-top:15px;
+}
+
+.pagenotes img{
+    padding-right:5px;
+    padding-top:5px;
+    margin-bottom:-5px;
+}
+
+
+/* -------------------------- POST TYPES -------------------------- */
+
+/* CHAT */
+
+ul.chat{
+    list-style:none;
+    margin-left:-40px;
+}
+
+.chat span {
+    float: left;
+}
+
+/* QUOTES */
+
+.quote{
+    font-size:16px;
+    line-height:150%;
+}
+
+.quotesource{
+    text-align:left;
+    margin-bottom:10px;
+}
+
+/* QUESTIONS */
+
+.question{
+    margin-bottom:15px;
+}
+
+.answer {
+    font-size:16px;
+}
+
+.askerimg{
+    position:relative;
+    display:inline-block;
+    margin-right:10px;
+}
+
+/* AUDIO */
+
+.songart{
+    float:left;
+    margin-right:10px;
+}
+
+.songart img{
+    width:80px;
+    height:80px;
+}
+
+.songtitle{
+    margin-bottom:10px;
+    margin-left:90px;
+}
+
+.songauthor{
+    margin-bottom:10px;
+    font-size:16px;
+    margin-left:90px;
+}
+
+.tumblr_audio_player {
+    height: 50px;
+}
+
+/* ------------------------- PAGINATION ------------------------- */
+
+#pagination{
+    position:static;
+    margin-top:30px;
+    text-align:center;
+}
+
+.pagibutton{
+    position:relative;
+    display:inline-block;
+    background:{color:posts};
+    padding:15px;
+}
+
+
+/* --------------------------- Custom CSS -------------------------- */
+{CustomCSS}
+</style>
+</head>
+<body>
+
+
+<div id="bigcon">
+
+
+<!--TOPBAR-->
+
+<div id="topbar">
+
+    <div class="blogtitle"><img src="https://68.media.tumblr.com/0799de42b4f774bbdfae8617f451bf6c/tumblr_ov2144Gg2S1w7ytluo1_1280.png"><br><br>
+        <a href="/">{Title}</a>
+    </div>
+
+    <div id="navbar">
+        <div class="tabs">
+            <ul class="tab-links">
+                <li class="active" style="margin-left:-30px">
+                <a href="#tab1">{text:Tab 1 Title}</a></li>
+                <li><a href="#tab2">{text:Tab 2 Title}</a></li>
+                <li><a href="#tab3">{text:Tab 3 Title}</a></li>
+                <li><a href="#tab4">{text:Tab 4 Title}</a></li>
+                <li><a href="#tab5">{text:Tab 5 Title}</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- --------------------------- TABS -------------------------- -->
+
+
+<div class="tabs">
+
+
+<!-- --------------------------- TAB 1 -------------------------- -->
+
+<div class="tab-content">
+<div id="tab1" class="tab active">
+
+<div id="postcontainer">
+
+{block:Posts}
+<article>
+
+<!--TEXT POST-->
+{block:Text}
+    {block:Title}
+    <h1 class="title">
+    <a href="{Permalink}">{Title}</a></h1>
+    {/block:Title}
+    {Body}
+{/block:Text}
+
+
+<!--PHOTO POST-->
+{block:Photo}
+    {block:IndexPage}
+    {LinkOpenTag}
+    <img src="{PhotoURL-500}" alt="{PhotoAlt}" />
+    {LinkCloseTag}
+    {/block:IndexPage}
+    {block:PermalinkPage}
+    {LinkOpenTag}
+    <img src="{PhotoURL-500}" alt="{PhotoAlt}" />
+    {LinkCloseTag}{/block:PermalinkPage}
+{/block:Photo}
+
+
+<!--PHOTOSET POST-->
+{block:Photoset}
+    {block:IndexPage}{Photoset-500}{/block:IndexPage}
+    {block:PermalinkPage}{Photoset-500}{/block:PermalinkPage}
+{/block:Photoset}
+
+
+<!--QUOTE POST-->
+{block:Quote}
+    <div class="quote">{Quote}</div>
+    {block:Source}
+    <div class="quotesource"><b>/</b> {Source}</div>
+    {/block:Source}
+{/block:Quote}
+
+
+<!--LINK POST-->
+{block:Link}
+    <h1 class="title"><a href="{URL}">{Name}</a></h1>
+    {block:Description}{Description}{/block:Description}
+{/block:Link}
+
+
+<!--CHAT POST-->
+{block:Chat}
+    <ul class="chat">
+        {block:Lines}<li class="{Alt}">{block:Label}<span class="label">{Label}&nbsp;</span>{/block:Label}<p> {Line} </p></li>{/block:Lines}
+    </ul>
+{/block:Chat}
+
+
+<!--AUDIO POST-->
+{block:Audio}
+    {block:AlbumArt}
+    <div class="songart">
+        <img src="{AlbumArtURL}">
+    </div>
+    {/block:AlbumArt}
+    <div class="songtitle">
+        {block:TrackName}
+        {TrackName}
+        {/block:TrackName}
+    </div>
+    <div class="songauthor">
+        By
+        {block:Artist}
+        {Artist}
+        {/block:Artist}
+    </div>
+    {AudioPlayerWhite}
+{/block:Audio}
+
+
+<!--VIDEO POST-->
+{block:Video}
+<div class="video">
+    <div class="video-player">{Video-500}</div>
+{/block:Video}
+
+
+<!--ANSWER POST-->
+{block:Answer}
+<div class="askerimg"><img src="{AskerPortraitURL-16}"></div>
+    <b>{Asker}:</b></span>
+<span class="question">{Question}</span>
+<p><div class="answer">{Answer}</div>
+{/block:Answer}
+
+<!--CAPTIONS-->
+{block:Ifhidecaptions}
+    {block:permalink}
+        {block:Caption}
+            {Caption}
+        {/block:Caption}
+    {/block:permalink}
+{/block:Ifhidecaptions}
+{block:Ifnothidecaptions}
+    {block:Caption}
+        {Caption}
+    {/block:Caption}
+{/block:Ifnothidecaptions}
+
+<!--POST INFORMATION-->
+<div class="postinfo">
+
+    <!--PERMALINK-->
+    <a href="{Permalink}">
+        {block:Date}
+        {ShortMonth} {DayOfMonth}{DayOfMonthSuffix} {12Hour}:{Minutes} {AmPm}
+        {/block:Date}
+    </a>
+
+    <!--NOTES-->
+    {block:NoteCount}
+        <a href="{Permalink}"> + {NoteCount} </a>
+    {/block:NoteCount}
+
+    <!--VIA AND SOURCE-->
+    {block:RebloggedFrom}
+        ( <a href="{ReblogParentURL}">Via</a>
+    {/block:RebloggedFrom}
+    {block:ContentSource}
+        & <a href="{SourceURL}">Source</a>
+    {/block:ContentSource}
+    {block:RebloggedFrom} ){/block:RebloggedFrom}
+
+    <!--TAGS-->
+    {block:HasTags}
+        <div class="tags">
+            {block:Tags}
+            <a href="{TagURL}">#{Tag},</a>
+            {/block:Tags}
+        </div>
+    {/block:HasTags}
+
+</div>
+
+<!--POST NOTES-->
+{block:PostNotes}
+    <div class="pagenotes">{PostNotes-16}</div>
+{/block:PostNotes}
+
+
+</article>
+{/block:Posts}
+<!--Close of article-->
+
+
+<!--PAGINATION-->
+{block:Pagination}
+    <div class="pagination">
+        {block:PreviousPage}
+        <a href="{PreviousPage}">
+            <div class="pagibutton">Previous</div></a>
+        {/block:PreviousPage}
+        {block:NextPage}
+        <a href="{NextPage}">
+            <div class="pagibutton">Next</div></a>
+        {/block:NextPage}
+    </div>
+{/block:Pagination}
+
+</div>
+
+</div>
+
+<!-- -------------------------- TAB 2 -------------------------- -->
+
+<div id="tab2" class="tab">
+    <div class="tabcontent">
+      <b>boring! boys! club!</b> is a collective and studio that revolves around collaboration, expression, and breaking boundaries. <br><br>We want to give artists in all creative fields (fine arts, graphic design, music, etc.) a platform to showcase their work and meet possible collaborators in industries that heavily rely on the “it’s who you know that matters” mentality.<br><br>
+    </div>
+</div>
+
+
+<!-- -------------------------- TAB 3 -------------------------- -->
+
+<div id="tab3" class="tab">
+    <div class="tabcontent">
+        under construction.
+    </div>
+</div>
+
+
+<!-- -------------------------- TAB 4 -------------------------- -->
+
+<div id="tab4" class="tab">
+    <div class="tabcontent">
+        <b>aug 13 2017</b> the prelude / <a href="https://boringboysclub.tumblr.com/preludeframes">prelude:frames</a>
+    </div>
+</div>
+
+
+<!-- -------------------------- TAB 5 -------------------------- -->
+
+<div id="tab5" class="tab">
+    <div class="tabcontent">
+       <a href="https://www.instagram.com/boringboysclub/">instagram</a> / <a href="https://twitter.com/BORINGBOYSCLUB">twitter</a> / <a href="https://www.facebook.com/boringboysclub/">facebook</a><br><br>
+to become a Boring Boy recruit, please click <a href="https://docs.google.com/forms/d/e/1FAIpQLScz9ttNHn7nbbMquiNAHR62_Bnwj4wv80_O1jdAzMlP7E80gQ/viewform">here</a>
+
+<br><br>
+to feature your work on any of our social media platforms, simply tag us at @boringboysclub, use the #boringboysclub, or email us at boringboysclub@gmail.com with your submission<br><br>for general inquiries send an <a href="/ask">ask</a> or email us at boringboysclub@gmail.com
+    </div>
+</div>
+
+
+
+<!-- END OF TABS -->
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- TABS/ALL-INN-ONE SCRIPTS DO NOT REMOVE!!! -->
+
+<script>
+$(document).ready(function() {
+    $('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = $(this).attr('href');
+
+        // Show/Hide Tabs
+        $('.tabs ' + currentAttrValue).fadeIn(600).siblings().hide();
+
+        // Change/remove current tab to active
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+
+        e.preventDefault();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+  $('#filterOptions li a').click(function() {
+    // fetch the class of the clicked item
+    var ourClass = $(this).attr('class');
+
+    // reset the active class on all the buttons
+    $('#filterOptions li').removeClass('active');
+    // update the active state on our clicked button
+    $(this).parent().addClass('active');
+
+    if(ourClass == 'all') {
+      // show all our items
+      $('#ourHolder').children('div.item').show();
+    }
+    else {
+      // hide all elements that don't share ourClass
+      $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+      // show all elements that do share ourClass
+      $('#ourHolder').children('div.' + ourClass).show();
+    }
+    return false;
+  });
+});
+</script>
+
+
+
+
+</body>
+</html>
