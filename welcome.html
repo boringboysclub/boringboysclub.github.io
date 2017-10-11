@@ -34,9 +34,10 @@ body {
     background:#FFF;
     color: #3a54a4;
     font-family: helvetica, arial, sans-serif;
-    font-size: 16px;
-    word-wrap: break-word;
+    font-size: 25px;
     text-transform:lowercase;
+    font-weight:500px;
+    word-wrap: break-word;
 }
 
 a {
@@ -50,20 +51,24 @@ a:hover{
 
 h1{
     text-transform:uppercase;
-    font-size:16px;
+    font-size:40px;
 }
 
 img{
   width:inherit;
 }
 
-#bigcon{
-    width:500px;
-    margin: 110px auto;
+#one{
+  position:relative;
+  max-width: 900px;
+  height:auto;
+  margin:100px auto;
+  text-align: center;
 }
 
-#bigcon img{
-  width:500px;
+.box {
+  border:6px #ec1c24 solid;
+  padding:10px;
 }
 
 /* --------------------------- Custom CSS -------------------------- */
@@ -73,9 +78,29 @@ img{
 
 <body>
 
-
-<div id="bigcon">
-  <a href="welcome.html"><img src="images/logo.png"></a>
+<div id="one">
+<div class="section group">
+    <div class="col span_1_of_4 box">
+    ABOUT
+    </div>
+    <div class="col span_1_of_4 box">
+    CONTACT
+    </div>
+    <div class="col span_1_of_4 box">
+    BORING BOYS
+    </div>
+</div>
+<div class="section group">
+    <div class="col span_1_of_4 box">
+    EVENTS
+    </div>
+    <div class="col span_1_of_4 box">
+    PROJECTS
+    </div>
+    <div class="col span_1_of_4 box">
+    INTERVIEWS
+    </div>
+</div>
 </div>
 
 
